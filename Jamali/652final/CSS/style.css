@@ -1,0 +1,355 @@
+body {
+  min-width: 400px;
+  width: 100%;
+}
+
+
+.headline {
+  background-color:#33cc33;
+  z-index: 3;
+  position: relative;
+    top: 25px;
+  height: 40px;
+  width:100%
+
+}
+
+.headlinetext {
+  text-align: center;
+  color: white;
+  font-family: Helvetica;
+  text-shadow: 2px 2px #000;
+  position: relative;
+    bottom:22px;
+  padding-top:25px;
+  padding-left:5px;
+  padding-right:5px;
+  padding-bottom:25px;
+}
+
+.headerpic {
+  opacity: 0.8;
+  display: block;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-image: url("https://i.imgur.com/m3lFM4M.jpg");
+  background-size: cover;
+  background-position: center;
+  height:500px;
+  clear: none;
+
+}
+
+.headerpic:hover {
+  opacity:1.0;
+}
+
+.headerbyline {
+  background-color: #33cc33;
+  text-align: center;
+  float: right; 
+  border-radius: 2px;
+  height: 45px;
+  opacity: 0.9;
+  position: relative;
+    top: 405px;
+  width:300px;
+}
+
+.bylinetext {
+  font-family: Helvetica;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  text-shadow: 2px 2px #000;
+  top: 4px;
+  width:100%;
+}
+
+.authorbox {
+  background-color: #33cc33;
+ width: 400px;
+  position: relative;
+    top: 370px;
+  z-index: 3;
+  height: 38px;
+}
+
+.authortext {
+  font-family: Helvetica;
+  width:60%;
+  position: relative;
+    top: 2px;
+    left: 50px;
+  color: white;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  text-shadow: 2px 2px #000;
+  position: relative;
+  text-align: center;
+}
+
+.caption {
+  font-family: Helvetica;
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  color: #595959;
+}
+
+.container{
+  width:90%;
+  margin:auto;
+}
+
+.container p {
+  font-size:130%;
+  font-family:Helvetica;
+} /*increased font size for legibility-->*/
+
+.text-wrap{
+  float:right;
+  width: 40%;
+  max-width:600px;
+  min-width:300px;
+  height:auto;
+  max-height:350px;
+  padding-left:50px;
+  padding-bottom:30px;
+  position:relative;
+  top:0;  
+}
+
+.vid-desktop{
+  display:initial; /*this is a bit redundant, but I included it so you can see the chance from here to the media query*/
+}
+
+.vid-mobile{
+  display:none;
+}
+
+
+/*.story {
+  display: block;
+  margin-right: 50px;
+  font-family: Helvetica;
+  position: relative;
+  line-height:25px;
+  left: 100px;
+  width: 50%;
+}*/
+
+
+h2 {
+  position:relative;
+  font-family: Helvetica;
+  font-size:200%;/*made subheadings more prominent*/
+  border-top:dotted 5px #33cc33; /*played with borders for aesthetics*/
+  border-bottom:dotted 5px #33cc33;
+  width:50%; /*Used width and margin:auto instead of text-align in order to control border length*/
+  margin:auto;
+  text-align: center;/*removed relative left positioning in favor of simple centering*/
+  margin-top:50px; /* adding white space above and below via CSS instead of br tags in html*/
+  margin-bottom:80px;
+  color:black;
+  
+}
+
+.wff {
+  float:right;
+  width: 40%;
+  max-width:600px;
+  min-width:300px;
+  height:auto;
+  max-height:350px;
+  padding-left:50px;
+  padding-bottom:30px;
+  position:relative;
+  top:0;  
+}
+
+
+
+#footersection{
+
+  border-top:dotted 5px #33cc33;
+  border-left: dotted 5px #33cc33;
+  border-bottom: dotted 5px #33cc33;
+  border-right: dotted 5px #33cc33;
+  width: 50%;
+  margin: auto;
+  height: auto;
+  margin-top: 30px;
+  
+}
+
+.footer {
+  font-family: Helvetica;
+  text-align: left;
+  width: 45%;
+  font-weight: bold;
+  position: relative;
+    bottom: 15px;
+    left: 5px;
+}
+
+.footerabout {
+  font-family: Helvetica;
+  font-style: underline;
+  font-size: 150%;
+  position: relative;
+  left: 5px;
+  bottom: 10px;
+  margin-right: 20px;
+}
+ 
+.footerpic {
+  float:right;
+  height: 150px;
+  position: relative;
+  top: 20px;
+  right: 10px;
+  border: solid 1px black;
+}
+
+.image-mobile {
+  display: none;
+}
+
+.image-desktop {
+  display: initial;
+}
+
+@media only screen and (max-width: 800px) {
+ 
+
+.text-wrap{
+  float:none;
+  width:100%;
+  max-width:800px;
+  height:auto;
+  max-height:350px;
+  padding-left:0px;
+  padding-bottom:10px;
+  position:static;
+  bottom:0;  
+}
+  
+  .wff{
+  float:none;
+  width:100%;
+
+  height:auto;
+  max-height:500px;
+  padding-left:0px;
+  padding-bottom:10px;
+  position:static
+ 
+  bottom:0;  
+  }
+  
+  .image-mobile {
+    display: initial;
+  }
+  
+  .image-desktop {
+    display: none;
+  }
+  
+  /*Invert the display property for which duplicated videos are displayed, before or after text section*/
+  
+  .vid-desktop{
+  display:none;
+}
+
+.vid-mobile{
+  display:initial;
+}
+
+ .headerbyline {
+    width: 50%;
+    position: relative;
+      top: 360px;
+    height: 13%;
+  } 
+  
+.authorbox {
+ width: 25%;
+  position: relative;
+    top: 305px;
+  z-index: 3;
+  height: 110px;
+
+}
+
+  .authortext {
+  text-align:center;
+  font-size: 150%;
+  position: relative;
+      left: 10px;
+      top: 10px;
+  }
+  
+  h2 {
+  margin-bottom:50px;
+  color:black;
+  }
+  
+  #footersection{
+  width: 100%;
+  }
+  
+    .footer{
+      width:35%;
+    }
+
+  @media only screen and (max-width: 400px) {
+  
+.headline {
+  z-index: 3;
+  position: relative;
+  height: 80px;
+  width:100%;
+
+}
+
+.headlinetext {
+  text-align: center;
+  position: relative;
+    bottom:22px;
+    }
+    
+.headerbyline {
+    width: 50%;
+    position: relative;
+      top: 320px;
+    height: 13%;
+  } 
+  
+.authorbox {
+ width: 25%;
+  position: relative;
+    top: 265px;
+  z-index: 3;
+  height: 110px;
+
+}
+
+  .authortext {
+  text-align:center;
+  font-size: 150%;
+  position: relative;
+      left: 10px;
+      top: 10px;
+  }
+    .footerpic {
+      position: relative;
+      top: 100px;
+    }
+    
+    .footer {
+      width: 32%;
+    }
+    
+    }
